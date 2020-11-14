@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhiteNoiseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLEEP SIMPLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pj6-4L-Wvg">
+                                <rect key="frame" x="107" y="94" width="200.5" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Vbp-sz-h2G" userLabel="Sound Menu">
+                                <rect key="frame" x="147" y="343" width="120" height="210"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhc-dy-cB5">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="S78-E0-ji9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" title="Fire">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ggb-oX-Ytj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pg-vH-0XV" userLabel="Rain Button">
+                                        <rect key="frame" x="0.0" y="75" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="eFk-EG-aDv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" title="Rain">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cL-XC-n3W"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dq0-H1-faK">
+                                        <rect key="frame" x="0.0" y="150" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="HKe-fm-Pfm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="Fan">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jhq-Yq-KWn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="x60-9i-b6N"/>
+                                </constraints>
+                                <variation key="widthClass=regular" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="2bl-kT-yJ7" userLabel="Controls">
+                                <rect key="frame" x="112" y="762" width="190" height="50"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJj-gC-vIh" userLabel="Play Button">
+                                        <rect key="frame" x="-50" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="STh-0I-wjW"/>
+                                            <constraint firstAttribute="width" constant="50" id="stu-0P-QYF"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="play" catalog="system"/>
+                                        <connections>
+                                            <action selector="mediaControl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEW-8K-C1w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKf-KR-mX2" userLabel="Pause Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="14f-12-yHa"/>
+                                            <constraint firstAttribute="height" constant="50" id="Rr9-WG-UPz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="pause" catalog="system"/>
+                                        <connections>
+                                            <action selector="mediaControl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7J0-Hs-qxO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsr-oi-51s">
+                                        <rect key="frame" x="140" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="C31-9g-WZc"/>
+                                            <constraint firstAttribute="height" constant="50" id="Xfx-7H-23p"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="timer" catalog="system"/>
+                                        <connections>
+                                            <action selector="openTimerMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hHI-XP-lpT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3L-vB-fT9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15294117647058825" green="0.15686274509803921" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W3L-vB-fT9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2iQ-CT-QEC"/>
+                            <constraint firstItem="Vbp-sz-h2G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HHw-bB-8qc"/>
+                            <constraint firstItem="pj6-4L-Wvg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="OSZ-7v-9dI"/>
+                            <constraint firstItem="2bl-kT-yJ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UMk-td-cyr"/>
+                            <constraint firstAttribute="bottom" secondItem="W3L-vB-fT9" secondAttribute="bottom" id="VTp-hx-4PK"/>
+                            <constraint firstItem="pj6-4L-Wvg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iFD-2p-Qpc"/>
+                            <constraint firstAttribute="trailing" secondItem="W3L-vB-fT9" secondAttribute="trailing" id="py7-sV-6Dv"/>
+                            <constraint firstItem="W3L-vB-fT9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uXi-AQ-17B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2bl-kT-yJ7" secondAttribute="bottom" constant="50" id="xww-lY-wFq"/>
+                            <constraint firstItem="Vbp-sz-h2G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zsp-JL-Gd5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fanButton" destination="dq0-H1-faK" id="vDh-Tt-aDO"/>
+                        <outlet property="fireButton" destination="fhc-dy-cB5" id="vom-em-Bgc"/>
+                        <outlet property="heading" destination="pj6-4L-Wvg" id="qgL-Y0-cLK"/>
+                        <outlet property="pauseButton" destination="hKf-KR-mX2" id="xJv-d4-ZEW"/>
+                        <outlet property="playButton" destination="kJj-gC-vIh" id="4Ag-7N-uvX"/>
+                        <outlet property="rainButton" destination="3pg-vH-0XV" id="URn-yS-aJI"/>
+                        <outlet property="soundMenu" destination="Vbp-sz-h2G" id="57J-BX-kai"/>
+                        <outlet property="timerButton" destination="Qsr-oi-51s" id="hDJ-Pf-Ix8"/>
+                        <outlet property="timerView" destination="W3L-vB-fT9" id="kjM-DU-TFn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause" catalog="system" width="88" height="128"/>
+        <image name="play" catalog="system" width="120" height="128"/>
+        <image name="timer" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
